@@ -49,7 +49,7 @@ describe('Teste se a aplicação é redirecionada  e', () => {
   });
   test('a aplicação é redirecionada para a página Not Found ao entrar em uma URL desconhecida', () => {
     const { history } = renderWithRouter(<App />);
-    const pathLocation = '/notFound';
+    const pathLocation = '/not-found';
     history.push(pathLocation);
     expect(history.location.pathname).toBe(pathLocation);
   });
